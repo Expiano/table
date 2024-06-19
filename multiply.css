@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#but {
+  font-size: 15px;
+  color: purple;
+}
+.main-div {
+  background-color: brown;
+  height: 600px;
+  width: 660px;
+  text-align: center;
+  margin: auto;
+}
+.multi {
+  margin: 10px 0 0 0;
+  font-size: 18px;
+  text-align: center;
+  color: aliceblue;
+}
+.container {
+  margin: 10px;
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+  justify-content: center;
+}
+
+#result {
+  display: flex;
+  gap: 20px;
+  font-size: 15px;
+  /* text-align: center; */
+  align-items: center;
+  justify-content: center;
+}

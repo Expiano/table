@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <link rel="stylesheet" href="multiply.css" />
+  </head>
+  <body>
+    <div class="main-div">
+      <div class="multi">
+        <h1>Multiplication Table</h1>
+      </div>
+      <div class="container">
+        <input autofocus type="text" id="startNum" />
+        <input autofocus type="text" id="endNum" />
+        <button id="but" onclick="startMultiply()">solve</button>
+      </div>
+      <p id="result"></p>
+    </div>
+  </body>
+</html>
+<script>
+  function startMultiply() {
+    let inputNumber = document.getElementById("startNum");
+    let inputNumberValue = inputNumber.value;
+    let inputNumber2 = document.getElementById("endNum");
+    let inputNumberValue2 = inputNumber2.value;
+    for (
+      let start = Number(inputNumberValue);
+      start <= Number(inputNumberValue2);
+      start++
+    ) {
+      let numDiv = document.createElement("div");
+      for (i = 1; i <= 12; i++) {
+        console.log(`${start} x ${i} = ${start * i}`);
+        numDiv.innerHTML += `<p> ${start} x ${i} = ${start * i} </p>`;
+      }
+      result.appendChild(numDiv);
+    }
+  }
+
+  /*for (let i = 1; i <= 12; i++) {
+    console.log(` 2 x ${i} = ${2 * i}`);
+  }
+  for (let i = 1; i <= 12; i++) {
+    console.log(` 3 x ${i} = ${3 * i}`);
+  }
+  for (let i = 1; i <= 12; i++) {
+    console.log(` 4 x ${i} = ${4 * i}`);
+  }
+  for (let i = 1; i <= 12; i++) {
+    console.log(` 5 x ${i} = ${5 * i}`);
+  }
+
+  let sum = 0;
+  for (let i = 0; i < 10; i++) {}*/
+</script>
